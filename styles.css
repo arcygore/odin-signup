@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
 }
 
 .main-container {
     display: flex;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -14,21 +15,90 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     gap: 60vh;
-    background-color: red;
-    width: min(600px,40%);
+    background-image: url("/images/Atlanta Skyline B&W.jpg");
+    background-size: cover;
+    background-position: 25%;
+    width: max(400px,45%);
+
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    text-shadow: 2px 2px rgb(0, 245, 204);
+}
+
+footer {
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px #333;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     gap: 5vh;
-    background-color: blue;
-    width: auto;
+    background-color: rgb(49, 49, 49);
+    color:rgb(255, 255, 255);
+    width: stretch;
 }
 
-p {
-    color: black;
-    height: auto;
+.description, .form-inputs, .log-in {
+    padding: 0 20% 0 5%;
+}
+
+.description {
+    font-size: 1.25rem;
+}
+
+h2 {
+    padding: 10px 0;
+    height: 1.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs {
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 49, 49);
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: bolder;
+    color: rgb(100,100,100);
+}
+
+form.main-form>button {
+    width: 160px;
+    margin: 15px 20% 0 5%;
+    padding: 10px 15px;
+    background-color: rgb(0, 245, 204);
+    color: rgb(49, 49, 49);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(0, 245, 204);
+    text-decoration: none;
 }
